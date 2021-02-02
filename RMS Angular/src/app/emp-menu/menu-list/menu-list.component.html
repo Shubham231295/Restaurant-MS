@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">
+      <button (click) = "addMenu()" style="margin-left: 10px;" class="btn btn-success float-right">Add</button>
+      <h4>Menu</h4>
+    </div>
+    <div class="card-body"> 
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr> 
+            <th>Id</th>  
+            <th>Name</th>
+            <th>Description</th> 
+            <th>Category</th>
+            <th>Price</th>
+            <th>Action</th> 
+          </tr> 
+        </thead>
+        <tbody> 
+          <tr *ngFor = "let menu of menus">
+            <td>{{menu['menu_id']}}</td>
+            <td>{{menu['mname']}}</td>
+            <td>{{menu['description']}}</td>
+            <td>{{menu['menu_category']}}</td>
+            <td>{{menu['price']}}</td>
+            <td>
+              <button (click) = "onEdit(menu)" style="margin-left: 10px;" class="btn btn-warning btn-sm">Edit</button>
+              <button (click) = "onDelete(menu)" style="margin-left: 10px;" class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

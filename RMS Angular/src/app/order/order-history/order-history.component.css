@@ -1,0 +1,16 @@
+body{
+    /* background: crimson; */
+    background-image: url('/assets/delivery.jpg') ;
+    /* background: url('/assets/delivery.png') left crimson; */
+    background-size: 600px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    height: 580px;
+   
+    }  
+
+
+/* div{
+    background-color: crimson; 
+    background-size: 500px;
+} */

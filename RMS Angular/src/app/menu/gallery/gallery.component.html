@@ -1,0 +1,30 @@
+<div class="row" style="margin-bottom: 40px; margin-top: 10px;">
+  <div class="col-md-12">
+    <button (click)="loadCart()" class="btn-success float-right">Cart</button> 
+    <h2>Menu</h2>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="col-md-0">
+      <div class="form-group">
+      </div> 
+    </div>
+    <div class="col-md-12">
+      <div class="row">
+        <div style="margin-top: 20px;" class="col-md-4" *ngFor="let menu of menus">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{menu['mname']}}</h5>
+              <p class="card-text">{{menu['description']}}</p>
+              <div class="price"><strong>Price: </strong>{{menu['price']}}</div>
+              <div class="category"><strong>Category: </strong> {{menu['menu_category']}}</div>
+              <button style="margin-top: 10px;" (click)="addToCart(menu)" class="btn btn-success btn-sm">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <img src="assets/waiter-menu.jpg"  style="margin-left: 800px; height: 300px;" alt="">
+  </div>

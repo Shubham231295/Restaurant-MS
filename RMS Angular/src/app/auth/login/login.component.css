@@ -1,0 +1,10 @@
+body{
+    background-color: crimson;
+    /* background: url('/assets/mascot.png') left no-repeat , url('/assets/restaurent.png') no-repeat right crimson; */
+    background-image: url('/assets/mascot.png') ;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 41%;
+    height: 640px;
+}
+ 

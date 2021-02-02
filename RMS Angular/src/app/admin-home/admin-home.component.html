@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #5c258d, #e4d235);">
+    <a class="navbar-brand" href="/adminHome/dashboard">Admin Panel</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a routerLink="/adminHome/dashboard" class="nav-link">Dashboard</a></li>
+        <li class="nav-item"><a routerLink="/adminHome/emp-user/user-list" class="nav-link">User</a></li>
+        <li class="nav-item"><a routerLink="/adminHome/employee/employee-list" class="nav-link">Employees</a></li>
+        <li class="nav-item"><a routerLink="/adminHome/emp-menu/menu-list" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a routerLink="/adminHome/emp-order/order-list" class="nav-link">Order</a></li> 
+        <li style="cursor: pointer;" (click) = "onLogout()" class="nav-item"><a class="nav-link">Logout</a></li>
+      </ul>
+    </div>  
+  </nav>     
+  
+  <div class="container" style="margin-top: 10px;">
+    <router-outlet></router-outlet>
+  </div>

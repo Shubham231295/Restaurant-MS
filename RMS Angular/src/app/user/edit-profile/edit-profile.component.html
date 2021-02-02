@@ -1,0 +1,54 @@
+<div class="card">
+    <div class="card-header">
+        <h4>Edit Profile</h4>
+    </div>
+    <div class="card-body">
+        <div style="margin-top: 50px;">
+            <div class="col-md-4"></div>
+            <div>
+              <div class="form"> 
+                <div class="form-group"> 
+                  <label for="">Firstname</label>
+                  <input maxlength="15" [(ngModel)]="firstname" style="width: 400px;" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                 <label for="">Lastname</label> 
+                 <input maxlength="15" [(ngModel)]="lastname" style="width: 400px;" type="text" class="form-control">
+               </div>
+               <div class="form-group">
+                 <label for="">Country</label>
+                 <input placeholder="India" disabled required [(ngModel)]="country" style="width: 400px;" type="text" class="form-control">
+               </div>
+               <div class="form-group"> 
+                 <label for="">City</label>
+                 <input maxlength="15" [(ngModel)]="city" style="width: 400px;" type="text" class="form-control">
+               </div>
+               <div class="form-group"> 
+                 <label >Building name and flat number</label>
+                 <input maxlength="50" [(ngModel)]="address" name="first" style="width: 400px;" type="text" class="form-control" id="inputAddress">
+               </div>
+               <div class="form-group"> 
+                 <label >Zip</label>
+                 <input maxlength="6" [(ngModel)]="zip" style="width: 100px;" type="number" class="form-control" id="inputZip">
+               </div>
+             </div>
+             <div class="form-group"> 
+               <label >Phone number</label>
+               <input maxlength="10" [(ngModel)]="phone_no" style="width: 400px;" type="number" class="form-control" id="inputZip">
+             </div>
+             <div class="form-group">
+              <label for="">Email</label> 
+              <input maxlength="35" [(ngModel)]="email" type="email" class="form-control">
+            </div>
+               <div class="form-group">
+                 <label for="">Usrename</label> 
+                 <input maxlength="8" [(ngModel)]="Username" style="width: 400px;" type="text" class="form-control">
+               </div>
+                <div class="form-group">
+                  <label for="">Password</label>
+                  <input maxlength="20" [(ngModel)]="password" style="width: 400px;" type="password" class="form-control">
+                </div>
+                <br>
+                <button (click)="onSave()" class="btn-success btn-sm">Save</button>
+    </div>
+</div>
